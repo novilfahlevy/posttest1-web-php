@@ -7,38 +7,14 @@
 
   <title>Novil Fahlevy's Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <?php require './styles.php'; ?>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="../styles/theme.css">
-  <link rel="stylesheet" href="../styles/about-me.css">
+  <link rel="stylesheet" href="./styles/about-me.css">
 </head>
 <body>
   
   <div class="container">
-    <!-- Navbar -->
-    <nav class="navbar">
-      <ul>
-        <li class="navbar-mailme">
-          <a href="mailto:novilfreon@gmail.com">
-            <i class="fas fa-envelope"></i>
-            <span>Mail me</span>
-          </a>
-        </li>
-        <li class="navbar-menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="about-me.html">About me</a></li>
-            <li><a href="portfolios.html">Portfolios</a></li>
-            <li><a href="contact-me.html">Contact me</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <!-- End Navbar -->
+    <?php require './layouts/navbar.php'; ?>    
 
     <!-- Main -->
     <main>
@@ -125,16 +101,7 @@
     <!-- End Main -->
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>Made with <span style="color: red;">&#10084;</span> by <b>Muhammad Novil Fahlevy</b></p>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/novil-fahlevy-46a38116a">Linkedin</a></li>
-      <li><a href="https://www.instagram.com/novilfahlevy">Instagram</a></li>
-      <li><a href="https://www.github.com/novilfahlevy">Github</a></li>
-    </ul>
-  </footer>
-  <!-- End Footer -->
+  <?php require './layouts/footer.php'; ?>
 
 </body>
 </html>
