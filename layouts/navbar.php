@@ -9,10 +9,11 @@
     </li>
     <li class="navbar-menu">
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li class="active"><a href="about-me.php">About me</a></li>
-        <li><a href="portfolios.php">Portfolios</a></li>
-        <li><a href="contact-me.php">Contact me</a></li>
+        <?php $nama_file_halaman = explode('/', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH))[2]; ?>
+        <li class="<?= $nama_file_halaman == 'index.php' ? 'active' : '' ?>"><a href="index.php">Home</a></li>
+        <li class="<?= $nama_file_halaman == 'about-me.php' ? 'active' : '' ?>"><a href="about-me.php">About me</a></li>
+        <li  class="<?= $nama_file_halaman == 'portfolios.php' ? 'active' : '' ?>"><a href="portfolios.php">Portfolios</a></li>
+        <li  class="<?= $nama_file_halaman == 'contact-me.php' ? 'active' : '' ?>"><a href="contact-me.php">Contact me</a></li>
       </ul>
     </li>
   </ul>
